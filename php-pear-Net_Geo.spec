@@ -2,8 +2,8 @@
 %define         _class          Net
 %define         _subclass       Geo
 %define		_pearname	%{_class}_%{_subclass}
-Summary:	%{_class}_%{_subclass} - geographical locations based on Internet address
-Summary(pl):	%{_class}_%{_subclass} - po³o¿enie geograficzne na podstawie adresu internetowego
+Summary:	%{_pearname} - geographical locations based on Internet address
+Summary(pl):	%{_pearname} - po³o¿enie geograficzne na podstawie adresu internetowego
 Name:		php-pear-%{_pearname}
 Version:	1.0
 Release:	2
