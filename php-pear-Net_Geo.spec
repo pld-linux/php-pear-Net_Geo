@@ -23,7 +23,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Obtains geographical information based on IP number, domain name, or
 AS number. Makes use of CAIDA Net_Geo lookup or locaizer extension.
 
-This class has in PEAR status: %{_status}.
+In PEAR status of this package is: %{_status}.
 
 %description -l pl
 Uzyskuje informacje geograficzne, bazuj±c na numerach IP, nazwach
