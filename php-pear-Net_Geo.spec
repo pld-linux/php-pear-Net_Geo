@@ -6,7 +6,7 @@ Summary:	%{_class}_%{_subclass} - geographical locations based on Internet addre
 Summary(pl):	%{_class}_%{_subclass} - po³o¿enie geograficzne na podstawie adresu internetowego
 Name:		php-pear-%{_pearname}
 Version:	1.0
-Release:	1
+Release:	2
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
