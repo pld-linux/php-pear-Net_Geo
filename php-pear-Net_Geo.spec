@@ -8,7 +8,7 @@ Summary:	%{_pearname} - geographical locations based on Internet address
 Summary(pl):	%{_pearname} - po³o¿enie geograficzne na podstawie adresu internetowego
 Name:		php-pear-%{_pearname}
 Version:	1.0
-Release:	4
+Release:	4.1
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
@@ -33,18 +33,19 @@ locaizer.
 Ta klasa ma w PEAR status: %{_status}.
 
 %prep
-%setup -q -c
+%pear_package_setup
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}
-
-install %{_pearname}-%{version}/*.php $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}
+install -d $RPM_BUILD_ROOT%{php_pear_dir}
+%pear_package_install
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc %{_pearname}-%{version}/README
+%doc install.log
+%doc docs/%{_pearname}/README
+%{php_pear_dir}/.registry/*.reg
 %{php_pear_dir}/%{_class}/*.php
