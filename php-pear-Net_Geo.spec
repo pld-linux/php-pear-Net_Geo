@@ -14,6 +14,7 @@ Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
 # Source0-md5:	30a0a736fae32e9dacf51528e4387fe6
 URL:		http://pear.php.net/package/Net_Geo/
+BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.0.2-98
 Requires:	php-pear
 Requires:	php-pear-Cache
