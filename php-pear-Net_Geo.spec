@@ -5,7 +5,7 @@
 %define		_pearname	%{_class}_%{_subclass}
 
 Summary:	%{_pearname} - geographical locations based on Internet address
-Summary(pl):	%{_pearname} - po≥oøenie geograficzne na podstawie adresu internetowego
+Summary(pl.UTF-8):   %{_pearname} - po≈Ço≈ºenie geograficzne na podstawie adresu internetowego
 Name:		php-pear-%{_pearname}
 Version:	1.0.4
 Release:	2
@@ -30,9 +30,9 @@ AS number. Makes use of CAIDA Net_Geo lookup or locaizer extension.
 
 In PEAR status of this package is: %{_status}.
 
-%description -l pl
-Uzyskuje informacje geograficzne, bazuj±c na numerach IP, nazwach
-domen oraz numerÛw AS-Ûw. Uøywa CAIDA Net_Geo lub rozszerzenia
+%description -l pl.UTF-8
+Uzyskuje informacje geograficzne, bazujƒÖc na numerach IP, nazwach
+domen oraz numer√≥w AS-√≥w. U≈ºywa CAIDA Net_Geo lub rozszerzenia
 locaizer.
 
 Ta klasa ma w PEAR status: %{_status}.
