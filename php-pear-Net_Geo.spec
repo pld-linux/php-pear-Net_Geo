@@ -5,7 +5,7 @@
 %define		_pearname	%{_class}_%{_subclass}
 
 Summary:	%{_pearname} - geographical locations based on Internet address
-Summary(pl.UTF-8):   %{_pearname} - położenie geograficzne na podstawie adresu internetowego
+Summary(pl.UTF-8):	%{_pearname} - położenie geograficzne na podstawie adresu internetowego
 Name:		php-pear-%{_pearname}
 Version:	1.0.4
 Release:	2
