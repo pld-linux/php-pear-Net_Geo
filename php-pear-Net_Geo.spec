@@ -1,20 +1,17 @@
 %include	/usr/lib/rpm/macros.php
-%define		_class		Net
-%define		_subclass	Geo
 %define		_status		stable
-%define		_pearname	%{_class}_%{_subclass}
-
+%define		_pearname	Net_Geo
 Summary:	%{_pearname} - geographical locations based on Internet address
 Summary(pl.UTF-8):	%{_pearname} - położenie geograficzne na podstawie adresu internetowego
 Name:		php-pear-%{_pearname}
-Version:	1.0.4
-Release:	3
+Version:	1.0.5
+Release:	1
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	1584f47c7f3cf006ab4793bbac416b09
+# Source0-md5:	49e1ebe6920e92624e234e34a1138c02
 URL:		http://pear.php.net/package/Net_Geo/
-BuildRequires:	php-pear-PEAR
+BuildRequires:	php-pear-PEAR >= 1:1.4.0-0.b1
 BuildRequires:	rpm-php-pearprov >= 4.0.2-98
 BuildRequires:	rpmbuild(macros) >= 1.300
 Requires:	php-pear
@@ -53,4 +50,4 @@ rm -rf $RPM_BUILD_ROOT
 %doc install.log
 %doc docs/%{_pearname}/README
 %{php_pear_dir}/.registry/*.reg
-%{php_pear_dir}/%{_class}/*.php
+%{php_pear_dir}/Net/*.php
