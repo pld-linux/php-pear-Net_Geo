@@ -1,4 +1,3 @@
-%include	/usr/lib/rpm/macros.php
 %define		_status		stable
 %define		_pearname	Net_Geo
 Summary:	%{_pearname} - geographical locations based on Internet address
